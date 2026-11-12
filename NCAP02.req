@@ -1,0 +1,7 @@
+
+Stakeholders: Driver
+Actors: Driver, System
+
+req NCAP02: While "vehicle speed is at least 10 km/h",
+    the System shall monitor "driver state continuously, beginning measurement within 1 minute".
+    Relevant-Stakeholders: Driver.

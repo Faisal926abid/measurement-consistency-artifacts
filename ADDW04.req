@@ -1,0 +1,7 @@
+
+Stakeholders: Driver
+Actors: Driver, System
+
+req ADDW04: While "the ADDW system is measuring gaze duration in Area 3",
+    the System shall track "accumulated gaze duration without resetting for short gaze interruptions or image processing artefacts, using a manufacturer-defined tolerance of at least 50 milliseconds".
+    Relevant-Stakeholders: Driver.

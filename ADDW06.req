@@ -1,0 +1,6 @@
+
+Stakeholders: Driver
+Actors: Manufacturer, System
+
+req ADDW06: The Manufacturer may implement "additional warning strategies based on driver behaviour, cognitive distraction, or the immediate environment within the vehicle".
+    Relevant-Stakeholders: Driver.

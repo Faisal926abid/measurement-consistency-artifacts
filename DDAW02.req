@@ -1,0 +1,7 @@
+
+Stakeholders: Driver
+Actors: Driver, System
+
+req DDAW02: While "the DDAW system is monitoring driver drowsiness",
+    the System shall monitor "information from other vehicle systems to detect drowsy driving indicators".
+    Relevant-Stakeholders: Driver.

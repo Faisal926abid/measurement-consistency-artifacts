@@ -1,0 +1,7 @@
+
+Stakeholders: Driver
+Actors: Driver, System
+
+req DDAW04: While "the DDAW activation criteria have been met",
+    the System shall monitor "driver drowsiness within less than 5 minutes after the activation criteria are met".
+    Relevant-Stakeholders: Driver.

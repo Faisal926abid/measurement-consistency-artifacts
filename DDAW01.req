@@ -1,0 +1,7 @@
+
+Stakeholders: Driver
+Actors: Driver, System
+
+req DDAW01: While "the driver's drowsiness level is equivalent to or above level 8 on the Karolinska Sleepiness Scale",
+    the System shall alert the Driver.
+    Relevant-Stakeholders: Driver.

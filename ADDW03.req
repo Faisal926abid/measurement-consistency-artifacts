@@ -1,0 +1,7 @@
+
+Stakeholders: Driver
+Actors: Driver, System
+
+req ADDW03: While "the ADDW system is activated and able to measure driver gaze",
+    the System shall track "the duration of gaze in Area 3 regardless of vehicle speed".
+    Relevant-Stakeholders: Driver.

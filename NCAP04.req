@@ -1,0 +1,7 @@
+
+Stakeholders: Driver
+Actors: Driver, System
+
+req NCAP04: While "vehicle speed is at least 50 km/h" and "driver drowsiness is above KSS level 7 or an equivalent measure",
+    the System shall alert the Driver.
+    Relevant-Stakeholders: Driver.

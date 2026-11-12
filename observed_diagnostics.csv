@@ -1,0 +1,7 @@
+scenario,parser_errors,severity,diagnostic_message
+original,0,none,
+linked_valid,0,none,
+linked_threshold_mismatch,0,error,"Measurement threshold mismatch: condition 8, definition 7."
+linked_operator_mismatch,0,error,"Measurement operator mismatch: condition >=, definition >."
+linked_scale_mismatch,0,error,"Measurement scale mismatch: condition KSS, definition OTHER."
+linked_missing_metadata,0,warning,Structured measurement KSS has no measurement definition.

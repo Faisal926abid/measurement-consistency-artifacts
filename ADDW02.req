@@ -1,0 +1,7 @@
+
+Stakeholders: Driver
+Actors: Driver, System
+
+req ADDW02: While "vehicle speed is at least 20 km/h" and "driver gaze is directed at Area 3 for 6 seconds",
+    the System shall alert the Driver.
+    Relevant-Stakeholders: Driver.
