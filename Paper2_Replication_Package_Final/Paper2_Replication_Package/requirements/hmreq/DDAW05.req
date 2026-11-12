@@ -1,7 +1,0 @@
-
-Stakeholders: Driver
-Actors: Driver, System
-
-req DDAW05: While "vehicle speed is between 65 and 130 km/h or up to the vehicle maximum permitted speed if lower",
-    the System shall monitor "driver drowsiness during normal DDAW operation without automatic deactivation above 130 km/h".
-    Relevant-Stakeholders: Driver.

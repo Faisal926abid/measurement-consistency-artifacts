@@ -1,7 +1,0 @@
-
-Stakeholders: Driver
-Actors: Driver, System
-
-req NCAP01: While "a new vehicle journey begins",
-    the System shall monitor "the driver monitoring system being ON by default at the start of the journey".
-    Relevant-Stakeholders: Driver.

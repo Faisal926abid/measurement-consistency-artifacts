@@ -1,7 +1,0 @@
-
-Stakeholders: Driver
-Actors: Driver, System
-
-req NCAP03: While "the driver's cumulative off-road gaze duration reaches 10 seconds within a 30-second window",
-    the System shall alert the Driver.
-    Relevant-Stakeholders: Driver.

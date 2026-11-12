@@ -1,7 +1,0 @@
-
-Stakeholders: Driver
-Actors: Driver, System
-
-req DDAW03: While "vehicle speed is above 70 km/h",
-    the System shall monitor "automatic activation of the DDAW system".
-    Relevant-Stakeholders: Driver.

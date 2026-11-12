@@ -1,7 +1,0 @@
-
-Stakeholders: Driver
-Actors: Driver, System
-
-req DDAW06: While "the vehicle is operating during daytime or nighttime",
-    the System shall monitor "driver drowsiness effectively under both daytime and nighttime conditions".
-    Relevant-Stakeholders: Driver.
