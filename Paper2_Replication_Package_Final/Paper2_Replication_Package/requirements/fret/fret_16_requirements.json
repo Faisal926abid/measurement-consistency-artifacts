@@ -1,0 +1,922 @@
+[
+  {
+    "reqid": "NCAP01",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if journeyStarted then driverMonitoringOn ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "journeyStarted",
+        "driverMonitoringOn"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(journeyStarted => driverMonitoringOn)",
+      "responseTextRange": [
+        20,
+        68
+      ],
+      "diagramVariables": "Response = <b><i>(journeyStarted => driverMonitoringOn)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(journeyStarted => driverMonitoringOn)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(journeyStarted => driverMonitoringOn)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "(journeyStarted -> driverMonitoringOn)",
+      "post_condition_unexp_ft": "(journeyStarted -> driverMonitoringOn)",
+      "post_condition_unexp_pctl": "(journeyStarted -> driverMonitoringOn)",
+      "post_condition_SMV_pt": "(journeyStarted -> driverMonitoringOn)",
+      "post_condition_SMV_ft": "(journeyStarted -> driverMonitoringOn)",
+      "post_condition_MLTL_ft": "(journeyStarted -> driverMonitoringOn)",
+      "post_condition_PRISM_pctl": "(journeyStarted -> driverMonitoringOn)",
+      "ft": "(LAST V (journeyStarted -> driverMonitoringOn))",
+      "pt": "(H (journeyStarted -> driverMonitoringOn))",
+      "pctl": "(P>=1[(G (journeyStarted -> driverMonitoringOn))])",
+      "ptExpanded": "(H (journeyStarted -> driverMonitoringOn))",
+      "CoCoSpecCode": "H((journeyStarted => driverMonitoringOn))",
+      "ftExpanded": "(LAST V (journeyStarted -> driverMonitoringOn))",
+      "pctlExpanded": "(P>=1[(G (journeyStarted -> driverMonitoringOn))])",
+      "ftInfAUExpanded": "(G (journeyStarted -> driverMonitoringOn))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: (journeyStarted -> driverMonitoringOn)",
+      "R2U2Code": "(journeyStarted -> driverMonitoringOn)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "63892a60-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "ADDW02",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if (vehicleSpeed >= 20) & (gazeDuration >= 6) & (gazeArea = 3) then alertIssued ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "vehicleSpeed",
+        "gazeDuration",
+        "gazeArea",
+        "alertIssued"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(( vehicleSpeed >= 20 ) & ( gazeDuration >= 6 ) & ( gazeArea = 3 ) => alertIssued)",
+      "responseTextRange": [
+        20,
+        106
+      ],
+      "diagramVariables": "Response = <b><i>(( vehicleSpeed >= 20 ) & ( gazeDuration >= 6 ) & ( gazeArea = 3 ) => alertIssued)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(( vehicleSpeed >= 20 ) & ( gazeDuration >= 6 ) & ( gazeArea = 3 ) => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(( vehicleSpeed >= 20 ) & ( gazeDuration >= 6 ) & ( gazeArea = 3 ) => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_unexp_ft": "((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_unexp_pctl": "((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_SMV_pt": "((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_SMV_ft": "((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_MLTL_ft": "((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_PRISM_pctl": "((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued)",
+      "ft": "(LAST V ((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued))",
+      "pt": "(H ((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued))",
+      "pctl": "(P>=1[(G ((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued))])",
+      "ptExpanded": "(H ((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued))",
+      "CoCoSpecCode": "H(((((vehicleSpeed >= 20) and (gazeDuration >= 6)) and (gazeArea = 3)) => alertIssued))",
+      "ftExpanded": "(LAST V ((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued))",
+      "pctlExpanded": "(P>=1[(G ((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued))])",
+      "ftInfAUExpanded": "(G ((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: ((((vehicleSpeed >= 20) & (gazeDuration >= 6)) & (gazeArea = 3)) -> alertIssued)",
+      "R2U2Code": "((((vehicleSpeed >= 20) && (gazeDuration >= 6)) && (gazeArea == 3)) -> alertIssued)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "63895170-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "DDAW03",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if vehicleSpeed > 70 then ddawActive ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "vehicleSpeed",
+        "ddawActive"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(vehicleSpeed > 70 => ddawActive)",
+      "responseTextRange": [
+        20,
+        63
+      ],
+      "diagramVariables": "Response = <b><i>(vehicleSpeed > 70 => ddawActive)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(vehicleSpeed > 70 => ddawActive)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(vehicleSpeed > 70 => ddawActive)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "((vehicleSpeed > 70) -> ddawActive)",
+      "post_condition_unexp_ft": "((vehicleSpeed > 70) -> ddawActive)",
+      "post_condition_unexp_pctl": "((vehicleSpeed > 70) -> ddawActive)",
+      "post_condition_SMV_pt": "((vehicleSpeed > 70) -> ddawActive)",
+      "post_condition_SMV_ft": "((vehicleSpeed > 70) -> ddawActive)",
+      "post_condition_MLTL_ft": "((vehicleSpeed > 70) -> ddawActive)",
+      "post_condition_PRISM_pctl": "((vehicleSpeed > 70) -> ddawActive)",
+      "ft": "(LAST V ((vehicleSpeed > 70) -> ddawActive))",
+      "pt": "(H ((vehicleSpeed > 70) -> ddawActive))",
+      "pctl": "(P>=1[(G ((vehicleSpeed > 70) -> ddawActive))])",
+      "ptExpanded": "(H ((vehicleSpeed > 70) -> ddawActive))",
+      "CoCoSpecCode": "H(((vehicleSpeed > 70) => ddawActive))",
+      "ftExpanded": "(LAST V ((vehicleSpeed > 70) -> ddawActive))",
+      "pctlExpanded": "(P>=1[(G ((vehicleSpeed > 70) -> ddawActive))])",
+      "ftInfAUExpanded": "(G ((vehicleSpeed > 70) -> ddawActive))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: ((vehicleSpeed > 70) -> ddawActive)",
+      "R2U2Code": "((vehicleSpeed > 70) -> ddawActive)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "63895172-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "DDAW01",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if drowsinessKSS >= 8 then alertIssued",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "drowsinessKSS",
+        "alertIssued"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(drowsinessKSS >= 8 => alertIssued)",
+      "responseTextRange": [
+        20,
+        65
+      ],
+      "diagramVariables": "Response = <b><i>(drowsinessKSS >= 8 => alertIssued)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(drowsinessKSS >= 8 => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(drowsinessKSS >= 8 => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "((drowsinessKSS >= 8) -> alertIssued)",
+      "post_condition_unexp_ft": "((drowsinessKSS >= 8) -> alertIssued)",
+      "post_condition_unexp_pctl": "((drowsinessKSS >= 8) -> alertIssued)",
+      "post_condition_SMV_pt": "((drowsinessKSS >= 8) -> alertIssued)",
+      "post_condition_SMV_ft": "((drowsinessKSS >= 8) -> alertIssued)",
+      "post_condition_MLTL_ft": "((drowsinessKSS >= 8) -> alertIssued)",
+      "post_condition_PRISM_pctl": "((drowsinessKSS >= 8) -> alertIssued)",
+      "ft": "(LAST V ((drowsinessKSS >= 8) -> alertIssued))",
+      "pt": "(H ((drowsinessKSS >= 8) -> alertIssued))",
+      "pctl": "(P>=1[(G ((drowsinessKSS >= 8) -> alertIssued))])",
+      "ptExpanded": "(H ((drowsinessKSS >= 8) -> alertIssued))",
+      "CoCoSpecCode": "H(((drowsinessKSS >= 8) => alertIssued))",
+      "ftExpanded": "(LAST V ((drowsinessKSS >= 8) -> alertIssued))",
+      "pctlExpanded": "(P>=1[(G ((drowsinessKSS >= 8) -> alertIssued))])",
+      "ftInfAUExpanded": "(G ((drowsinessKSS >= 8) -> alertIssued))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: ((drowsinessKSS >= 8) -> alertIssued)",
+      "R2U2Code": "((drowsinessKSS >= 8) -> alertIssued)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "63895173-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "ADDW05",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  Manufacturer may set a lower minimum vehicle speed threshold for the ADDW warning conditions. ",
+    "semantics": {},
+    "status": "",
+    "_id": "63895176-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "NCAP02",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if (vehicleSpeed >= 10) & (monitoringStartupTime <= 60) then driverMonitoringActive ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "vehicleSpeed",
+        "monitoringStartupTime",
+        "driverMonitoringActive"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(( vehicleSpeed >= 10 ) & ( monitoringStartupTime <= 60 ) => driverMonitoringActive)",
+      "responseTextRange": [
+        20,
+        110
+      ],
+      "diagramVariables": "Response = <b><i>(( vehicleSpeed >= 10 ) & ( monitoringStartupTime <= 60 ) => driverMonitoringActive)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(( vehicleSpeed >= 10 ) & ( monitoringStartupTime <= 60 ) => driverMonitoringActive)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(( vehicleSpeed >= 10 ) & ( monitoringStartupTime <= 60 ) => driverMonitoringActive)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "(((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive)",
+      "post_condition_unexp_ft": "(((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive)",
+      "post_condition_unexp_pctl": "(((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive)",
+      "post_condition_SMV_pt": "(((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive)",
+      "post_condition_SMV_ft": "(((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive)",
+      "post_condition_MLTL_ft": "(((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive)",
+      "post_condition_PRISM_pctl": "(((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive)",
+      "ft": "(LAST V (((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive))",
+      "pt": "(H (((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive))",
+      "pctl": "(P>=1[(G (((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive))])",
+      "ptExpanded": "(H (((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive))",
+      "CoCoSpecCode": "H((((vehicleSpeed >= 10) and (monitoringStartupTime <= 60)) => driverMonitoringActive))",
+      "ftExpanded": "(LAST V (((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive))",
+      "pctlExpanded": "(P>=1[(G (((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive))])",
+      "ftInfAUExpanded": "(G (((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: (((vehicleSpeed >= 10) & (monitoringStartupTime <= 60)) -> driverMonitoringActive)",
+      "R2U2Code": "(((vehicleSpeed >= 10) && (monitoringStartupTime <= 60)) -> driverMonitoringActive)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "63895177-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "DDAW05",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if (vehicleSpeed >= 65) & (vehicleSpeed <= 130) & (vehicleSpeed <= vehicleMaxSpeed) then ddawOperating ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "vehicleSpeed",
+        "vehicleMaxSpeed",
+        "ddawOperating"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(( vehicleSpeed >= 65 ) & ( vehicleSpeed <= 130 ) & ( vehicleSpeed <= vehicleMaxSpeed ) => ddawOperating)",
+      "responseTextRange": [
+        20,
+        129
+      ],
+      "diagramVariables": "Response = <b><i>(( vehicleSpeed >= 65 ) & ( vehicleSpeed <= 130 ) & ( vehicleSpeed <= vehicleMaxSpeed ) => ddawOperating)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(( vehicleSpeed >= 65 ) & ( vehicleSpeed <= 130 ) & ( vehicleSpeed <= vehicleMaxSpeed ) => ddawOperating)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(( vehicleSpeed >= 65 ) & ( vehicleSpeed <= 130 ) & ( vehicleSpeed <= vehicleMaxSpeed ) => ddawOperating)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating)",
+      "post_condition_unexp_ft": "((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating)",
+      "post_condition_unexp_pctl": "((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating)",
+      "post_condition_SMV_pt": "((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating)",
+      "post_condition_SMV_ft": "((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating)",
+      "post_condition_MLTL_ft": "((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating)",
+      "post_condition_PRISM_pctl": "((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating)",
+      "ft": "(LAST V ((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating))",
+      "pt": "(H ((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating))",
+      "pctl": "(P>=1[(G ((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating))])",
+      "ptExpanded": "(H ((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating))",
+      "CoCoSpecCode": "H(((((vehicleSpeed >= 65) and (vehicleSpeed <= 130)) and (vehicleSpeed <= vehicleMaxSpeed)) => ddawOperating))",
+      "ftExpanded": "(LAST V ((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating))",
+      "pctlExpanded": "(P>=1[(G ((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating))])",
+      "ftInfAUExpanded": "(G ((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: ((((vehicleSpeed >= 65) & (vehicleSpeed <= 130)) & (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating)",
+      "R2U2Code": "((((vehicleSpeed >= 65) && (vehicleSpeed <= 130)) && (vehicleSpeed <= vehicleMaxSpeed)) -> ddawOperating)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "63895178-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "ADDW04",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if addwActive & shortGazeInterruption & (interruptionDuration <= gazeTolerance) & (gazeTolerance >= 0.05) then gazeTimerPreserved ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "addwActive",
+        "shortGazeInterruption",
+        "interruptionDuration",
+        "gazeTolerance",
+        "gazeTimerPreserved"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(addwActive & shortGazeInterruption & ( interruptionDuration <= gazeTolerance ) & ( gazeTolerance >= 0.05 ) => gazeTimerPreserved)",
+      "responseTextRange": [
+        20,
+        156
+      ],
+      "diagramVariables": "Response = <b><i>(addwActive & shortGazeInterruption & ( interruptionDuration <= gazeTolerance ) & ( gazeTolerance >= 0.05 ) => gazeTimerPreserved)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(addwActive & shortGazeInterruption & ( interruptionDuration <= gazeTolerance ) & ( gazeTolerance >= 0.05 ) => gazeTimerPreserved)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(addwActive & shortGazeInterruption & ( interruptionDuration <= gazeTolerance ) & ( gazeTolerance >= 0.05 ) => gazeTimerPreserved)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved)",
+      "post_condition_unexp_ft": "((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved)",
+      "post_condition_unexp_pctl": "((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved)",
+      "post_condition_SMV_pt": "((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved)",
+      "post_condition_SMV_ft": "((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved)",
+      "post_condition_MLTL_ft": "((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved)",
+      "post_condition_PRISM_pctl": "((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved)",
+      "ft": "(LAST V ((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved))",
+      "pt": "(H ((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved))",
+      "pctl": "(P>=1[(G ((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved))])",
+      "ptExpanded": "(H ((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved))",
+      "CoCoSpecCode": "H(((((addwActive and shortGazeInterruption) and (interruptionDuration <= gazeTolerance)) and (gazeTolerance >= 0.05)) => gazeTimerPreserved))",
+      "ftExpanded": "(LAST V ((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved))",
+      "pctlExpanded": "(P>=1[(G ((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved))])",
+      "ftInfAUExpanded": "(G ((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: ((((addwActive & shortGazeInterruption) & (interruptionDuration <= gazeTolerance)) & (gazeTolerance >= 0.05)) -> gazeTimerPreserved)",
+      "R2U2Code": "((((addwActive && shortGazeInterruption) && (interruptionDuration <= gazeTolerance)) && (gazeTolerance >= 0.05)) -> gazeTimerPreserved)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "63895179-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "ADDW06",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  Manufacturer may implement additional warning strategies based on driver behaviour, cognitive distraction, or the immediate vehicle environment. ",
+    "semantics": {},
+    "status": "",
+    "_id": "6389517a-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "NCAP03",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if cumulativeOffRoadGaze >= 10 then alertIssued ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "cumulativeOffRoadGaze",
+        "alertIssued"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(cumulativeOffRoadGaze >= 10 => alertIssued)",
+      "responseTextRange": [
+        20,
+        74
+      ],
+      "diagramVariables": "Response = <b><i>(cumulativeOffRoadGaze >= 10 => alertIssued)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(cumulativeOffRoadGaze >= 10 => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(cumulativeOffRoadGaze >= 10 => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "((cumulativeOffRoadGaze >= 10) -> alertIssued)",
+      "post_condition_unexp_ft": "((cumulativeOffRoadGaze >= 10) -> alertIssued)",
+      "post_condition_unexp_pctl": "((cumulativeOffRoadGaze >= 10) -> alertIssued)",
+      "post_condition_SMV_pt": "((cumulativeOffRoadGaze >= 10) -> alertIssued)",
+      "post_condition_SMV_ft": "((cumulativeOffRoadGaze >= 10) -> alertIssued)",
+      "post_condition_MLTL_ft": "((cumulativeOffRoadGaze >= 10) -> alertIssued)",
+      "post_condition_PRISM_pctl": "((cumulativeOffRoadGaze >= 10) -> alertIssued)",
+      "ft": "(LAST V ((cumulativeOffRoadGaze >= 10) -> alertIssued))",
+      "pt": "(H ((cumulativeOffRoadGaze >= 10) -> alertIssued))",
+      "pctl": "(P>=1[(G ((cumulativeOffRoadGaze >= 10) -> alertIssued))])",
+      "ptExpanded": "(H ((cumulativeOffRoadGaze >= 10) -> alertIssued))",
+      "CoCoSpecCode": "H(((cumulativeOffRoadGaze >= 10) => alertIssued))",
+      "ftExpanded": "(LAST V ((cumulativeOffRoadGaze >= 10) -> alertIssued))",
+      "pctlExpanded": "(P>=1[(G ((cumulativeOffRoadGaze >= 10) -> alertIssued))])",
+      "ftInfAUExpanded": "(G ((cumulativeOffRoadGaze >= 10) -> alertIssued))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: ((cumulativeOffRoadGaze >= 10) -> alertIssued)",
+      "R2U2Code": "((cumulativeOffRoadGaze >= 10) -> alertIssued)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "6389517c-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "DDAW04",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if activationCriteriaMet then monitoringStartedWithin5Minutes ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "activationCriteriaMet",
+        "monitoringStartedWithin5Minutes"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(activationCriteriaMet => monitoringStartedWithin5Minutes)",
+      "responseTextRange": [
+        20,
+        88
+      ],
+      "diagramVariables": "Response = <b><i>(activationCriteriaMet => monitoringStartedWithin5Minutes)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(activationCriteriaMet => monitoringStartedWithin5Minutes)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(activationCriteriaMet => monitoringStartedWithin5Minutes)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "(activationCriteriaMet -> monitoringStartedWithin5Minutes)",
+      "post_condition_unexp_ft": "(activationCriteriaMet -> monitoringStartedWithin5Minutes)",
+      "post_condition_unexp_pctl": "(activationCriteriaMet -> monitoringStartedWithin5Minutes)",
+      "post_condition_SMV_pt": "(activationCriteriaMet -> monitoringStartedWithin5Minutes)",
+      "post_condition_SMV_ft": "(activationCriteriaMet -> monitoringStartedWithin5Minutes)",
+      "post_condition_MLTL_ft": "(activationCriteriaMet -> monitoringStartedWithin5Minutes)",
+      "post_condition_PRISM_pctl": "(activationCriteriaMet -> monitoringStartedWithin5Minutes)",
+      "ft": "(LAST V (activationCriteriaMet -> monitoringStartedWithin5Minutes))",
+      "pt": "(H (activationCriteriaMet -> monitoringStartedWithin5Minutes))",
+      "pctl": "(P>=1[(G (activationCriteriaMet -> monitoringStartedWithin5Minutes))])",
+      "ptExpanded": "(H (activationCriteriaMet -> monitoringStartedWithin5Minutes))",
+      "CoCoSpecCode": "H((activationCriteriaMet => monitoringStartedWithin5Minutes))",
+      "ftExpanded": "(LAST V (activationCriteriaMet -> monitoringStartedWithin5Minutes))",
+      "pctlExpanded": "(P>=1[(G (activationCriteriaMet -> monitoringStartedWithin5Minutes))])",
+      "ftInfAUExpanded": "(G (activationCriteriaMet -> monitoringStartedWithin5Minutes))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: (activationCriteriaMet -> monitoringStartedWithin5Minutes)",
+      "R2U2Code": "(activationCriteriaMet -> monitoringStartedWithin5Minutes)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "6389517d-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "DDAW02",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if ddawActive & vehicleDataAvailable then drowsinessAnalysisActive",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "ddawActive",
+        "vehicleDataAvailable",
+        "drowsinessAnalysisActive"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(ddawActive & vehicleDataAvailable => drowsinessAnalysisActive)",
+      "responseTextRange": [
+        20,
+        93
+      ],
+      "diagramVariables": "Response = <b><i>(ddawActive & vehicleDataAvailable => drowsinessAnalysisActive)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(ddawActive & vehicleDataAvailable => drowsinessAnalysisActive)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(ddawActive & vehicleDataAvailable => drowsinessAnalysisActive)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive)",
+      "post_condition_unexp_ft": "((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive)",
+      "post_condition_unexp_pctl": "((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive)",
+      "post_condition_SMV_pt": "((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive)",
+      "post_condition_SMV_ft": "((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive)",
+      "post_condition_MLTL_ft": "((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive)",
+      "post_condition_PRISM_pctl": "((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive)",
+      "ft": "(LAST V ((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive))",
+      "pt": "(H ((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive))",
+      "pctl": "(P>=1[(G ((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive))])",
+      "ptExpanded": "(H ((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive))",
+      "CoCoSpecCode": "H(((ddawActive and vehicleDataAvailable) => drowsinessAnalysisActive))",
+      "ftExpanded": "(LAST V ((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive))",
+      "pctlExpanded": "(P>=1[(G ((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive))])",
+      "ftInfAUExpanded": "(G ((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: ((ddawActive & vehicleDataAvailable) -> drowsinessAnalysisActive)",
+      "R2U2Code": "((ddawActive && vehicleDataAvailable) -> drowsinessAnalysisActive)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "6389517e-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "NCAP04",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if (vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected) then alertIssued ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "vehicleSpeed",
+        "drowsinessKSS",
+        "equivalentDrowsinessDetected",
+        "alertIssued"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(( vehicleSpeed >= 50 ) & ( ( drowsinessKSS > 7 ) | equivalentDrowsinessDetected ) => alertIssued)",
+      "responseTextRange": [
+        20,
+        122
+      ],
+      "diagramVariables": "Response = <b><i>(( vehicleSpeed >= 50 ) & ( ( drowsinessKSS > 7 ) | equivalentDrowsinessDetected ) => alertIssued)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(( vehicleSpeed >= 50 ) & ( ( drowsinessKSS > 7 ) | equivalentDrowsinessDetected ) => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(( vehicleSpeed >= 50 ) & ( ( drowsinessKSS > 7 ) | equivalentDrowsinessDetected ) => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "(((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued)",
+      "post_condition_unexp_ft": "(((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued)",
+      "post_condition_unexp_pctl": "(((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued)",
+      "post_condition_SMV_pt": "(((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued)",
+      "post_condition_SMV_ft": "(((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued)",
+      "post_condition_MLTL_ft": "(((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued)",
+      "post_condition_PRISM_pctl": "(((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued)",
+      "ft": "(LAST V (((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued))",
+      "pt": "(H (((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued))",
+      "pctl": "(P>=1[(G (((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued))])",
+      "ptExpanded": "(H (((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued))",
+      "CoCoSpecCode": "H((((vehicleSpeed >= 50) and ((drowsinessKSS > 7) or equivalentDrowsinessDetected)) => alertIssued))",
+      "ftExpanded": "(LAST V (((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued))",
+      "pctlExpanded": "(P>=1[(G (((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued))])",
+      "ftInfAUExpanded": "(G (((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: (((vehicleSpeed >= 50) & ((drowsinessKSS > 7) | equivalentDrowsinessDetected)) -> alertIssued)",
+      "R2U2Code": "(((vehicleSpeed >= 50) && ((drowsinessKSS > 7) || equivalentDrowsinessDetected)) -> alertIssued)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "6389517f-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "ADDW01",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if (vehicleSpeed >= 50) & (gazeDuration >= 3.5) & (gazeArea = 3) then alertIssued",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "vehicleSpeed",
+        "gazeDuration",
+        "gazeArea",
+        "alertIssued"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(( vehicleSpeed >= 50 ) & ( gazeDuration >= 3.5 ) & ( gazeArea = 3 ) => alertIssued)",
+      "responseTextRange": [
+        20,
+        108
+      ],
+      "diagramVariables": "Response = <b><i>(( vehicleSpeed >= 50 ) & ( gazeDuration >= 3.5 ) & ( gazeArea = 3 ) => alertIssued)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(( vehicleSpeed >= 50 ) & ( gazeDuration >= 3.5 ) & ( gazeArea = 3 ) => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(( vehicleSpeed >= 50 ) & ( gazeDuration >= 3.5 ) & ( gazeArea = 3 ) => alertIssued)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_unexp_ft": "((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_unexp_pctl": "((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_SMV_pt": "((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_SMV_ft": "((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_MLTL_ft": "((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued)",
+      "post_condition_PRISM_pctl": "((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued)",
+      "ft": "(LAST V ((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued))",
+      "pt": "(H ((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued))",
+      "pctl": "(P>=1[(G ((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued))])",
+      "ptExpanded": "(H ((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued))",
+      "CoCoSpecCode": "H(((((vehicleSpeed >= 50) and (gazeDuration >= 3.5)) and (gazeArea = 3)) => alertIssued))",
+      "ftExpanded": "(LAST V ((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued))",
+      "pctlExpanded": "(P>=1[(G ((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued))])",
+      "ftInfAUExpanded": "(G ((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: ((((vehicleSpeed >= 50) & (gazeDuration >= 3.5)) & (gazeArea = 3)) -> alertIssued)",
+      "R2U2Code": "((((vehicleSpeed >= 50) && (gazeDuration >= 3.5)) && (gazeArea == 3)) -> alertIssued)",
+      "component": "System"
+    },
+    "status": "in progress",
+    "_id": "63895180-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "ADDW03",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if addwActive & gazeMeasurementAvailable & gazeArea = 3 then gazeTimerRunning ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "addwActive",
+        "gazeMeasurementAvailable",
+        "gazeArea",
+        "gazeTimerRunning"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(addwActive & gazeMeasurementAvailable & gazeArea = 3 => gazeTimerRunning)",
+      "responseTextRange": [
+        20,
+        104
+      ],
+      "diagramVariables": "Response = <b><i>(addwActive & gazeMeasurementAvailable & gazeArea = 3 => gazeTimerRunning)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(addwActive & gazeMeasurementAvailable & gazeArea = 3 => gazeTimerRunning)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(addwActive & gazeMeasurementAvailable & gazeArea = 3 => gazeTimerRunning)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "(((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning)",
+      "post_condition_unexp_ft": "(((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning)",
+      "post_condition_unexp_pctl": "(((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning)",
+      "post_condition_SMV_pt": "(((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning)",
+      "post_condition_SMV_ft": "(((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning)",
+      "post_condition_MLTL_ft": "(((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning)",
+      "post_condition_PRISM_pctl": "(((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning)",
+      "ft": "(LAST V (((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning))",
+      "pt": "(H (((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning))",
+      "pctl": "(P>=1[(G (((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning))])",
+      "ptExpanded": "(H (((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning))",
+      "CoCoSpecCode": "H((((addwActive and gazeMeasurementAvailable) and (gazeArea = 3)) => gazeTimerRunning))",
+      "ftExpanded": "(LAST V (((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning))",
+      "pctlExpanded": "(P>=1[(G (((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning))])",
+      "ftInfAUExpanded": "(G (((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: (((addwActive & gazeMeasurementAvailable) & (gazeArea = 3)) -> gazeTimerRunning)",
+      "R2U2Code": "(((addwActive && gazeMeasurementAvailable) && (gazeArea == 3)) -> gazeTimerRunning)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "63895181-de11-11f1-8275-6ffedbd021f3"
+  },
+  {
+    "reqid": "DDAW06",
+    "parent_reqid": "",
+    "project": "Default",
+    "rationale": "",
+    "comments": "",
+    "fulltext": "  System shall always satisfy if (daytime | nighttime) & ddawActive then drowsinessMonitoringEffective ",
+    "semantics": {
+      "type": "nasa",
+      "scope": {
+        "type": "null"
+      },
+      "condition": "null",
+      "probability": "null",
+      "timing": "always",
+      "response": "satisfaction",
+      "variables": [
+        "daytime",
+        "nighttime",
+        "ddawActive",
+        "drowsinessMonitoringEffective"
+      ],
+      "component_name": "System",
+      "componentTextRange": [
+        0,
+        5
+      ],
+      "timingTextRange": [
+        13,
+        18
+      ],
+      "post_condition": "(( daytime | nighttime ) & ddawActive => drowsinessMonitoringEffective)",
+      "responseTextRange": [
+        20,
+        99
+      ],
+      "diagramVariables": "Response = <b><i>(( daytime | nighttime ) & ddawActive => drowsinessMonitoringEffective)</i></b>.",
+      "description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, <b><i>(( daytime | nighttime ) & ddawActive => drowsinessMonitoringEffective)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "probabilistic_description": "SCOPE: in the interval defined by the entire execution.<br>TRIGGER: first point in the interval.<br>REQUIRED BEHAVIOR: for every trigger, with probability >=1, <b><i>(( daytime | nighttime ) & ddawActive => drowsinessMonitoringEffective)</i></b> must hold at all time points between (and including) the trigger and the end of the interval.",
+      "diagram": "_media/user-interface/examples/svgDiagrams/null_null_always_satisfaction.svg",
+      "scope_mode_pt": "BAD_PT",
+      "scope_mode_ft": "BAD_FT",
+      "post_condition_unexp_pt": "(((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective)",
+      "post_condition_unexp_ft": "(((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective)",
+      "post_condition_unexp_pctl": "(((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective)",
+      "post_condition_SMV_pt": "(((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective)",
+      "post_condition_SMV_ft": "(((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective)",
+      "post_condition_MLTL_ft": "(((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective)",
+      "post_condition_PRISM_pctl": "(((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective)",
+      "ft": "(LAST V (((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective))",
+      "pt": "(H (((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective))",
+      "pctl": "(P>=1[(G (((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective))])",
+      "ptExpanded": "(H (((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective))",
+      "CoCoSpecCode": "H((((daytime or nighttime) and ddawActive) => drowsinessMonitoringEffective))",
+      "ftExpanded": "(LAST V (((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective))",
+      "pctlExpanded": "(P>=1[(G (((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective))])",
+      "ftInfAUExpanded": "(G (((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective))",
+      "mltlExpanded": "(G[0,M] p0)",
+      "WESTMapping": "p0: (((daytime | nighttime) & ddawActive) -> drowsinessMonitoringEffective)",
+      "R2U2Code": "(((daytime || nighttime) && ddawActive) -> drowsinessMonitoringEffective)",
+      "component": "System"
+    },
+    "status": "",
+    "_id": "63895182-de11-11f1-8275-6ffedbd021f3"
+  }
+]

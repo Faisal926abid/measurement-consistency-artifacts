@@ -1,0 +1,6 @@
+
+Stakeholders: Driver
+Actors: Manufacturer, System
+
+req ADDW05: The Manufacturer may allow "a lower minimum vehicle speed threshold for the warning conditions specified in Sections 3.3.2.1 and 3.3.2.2".
+    Relevant-Stakeholders: Driver.
